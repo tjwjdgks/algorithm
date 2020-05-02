@@ -1,5 +1,0 @@
-﻿  tagetNumber.cpp
-C:\Users\SEO\Documents\GitHub\algorithm\프로그래머스\타겟 넘버\타겟 넘버\tagetNumber.cpp(10,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\SEO\Documents\GitHub\algorithm\프로그래머스\타겟 넘버\타겟 넘버\tagetNumber.cpp(17,27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\SEO\Documents\GitHub\algorithm\프로그래머스\타겟 넘버\타겟 넘버\tagetNumber.cpp(29,27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-  타겟 넘버.vcxproj -> C:\Users\SEO\Documents\GitHub\algorithm\프로그래머스\타겟 넘버\Debug\타겟 넘버.exe

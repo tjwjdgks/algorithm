@@ -1,7 +1,0 @@
-﻿  4095.cpp
-C:\Users\SEO\Documents\GitHub\algorithm\백준\4095\4095\4095.cpp(8,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\SEO\Documents\GitHub\algorithm\백준\4095\4095\4095.cpp(13,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\SEO\Documents\GitHub\algorithm\백준\4095\4095\4095.cpp(18,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\SEO\Documents\GitHub\algorithm\백준\4095\4095\4095.cpp(19,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\SEO\Documents\GitHub\algorithm\백준\4095\4095\4095.cpp(49,19): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-  4095.vcxproj -> C:\Users\SEO\Documents\GitHub\algorithm\백준\4095\Debug\4095.exe

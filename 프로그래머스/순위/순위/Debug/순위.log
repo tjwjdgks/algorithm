@@ -1,7 +1,0 @@
-﻿  rank.cpp
-C:\Users\SEO\Documents\GitHub\algorithm\프로그래머스\순위\순위\rank.cpp(49,26): warning C4018: '<=': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\SEO\Documents\GitHub\algorithm\프로그래머스\순위\순위\rank.cpp(51,30): warning C4018: '<=': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\SEO\Documents\GitHub\algorithm\프로그래머스\순위\순위\rank.cpp(53,34): warning C4018: '<=': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\SEO\Documents\GitHub\algorithm\프로그래머스\순위\순위\rank.cpp(60,26): warning C4018: '<=': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\SEO\Documents\GitHub\algorithm\프로그래머스\순위\순위\rank.cpp(63,30): warning C4018: '<=': signed 또는 unsigned가 일치하지 않습니다.
-  순위.vcxproj -> C:\Users\SEO\Documents\GitHub\algorithm\프로그래머스\순위\Debug\순위.exe
