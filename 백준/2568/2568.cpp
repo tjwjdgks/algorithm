@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <cstdio>
 #include <vector>
 #include <algorithm>
@@ -37,18 +37,18 @@ int main()
         int idx, val;
         scanf("%d %d", &idx, &val);
 
-        // ÀÎµ¦½º¿Í °ªÀ» ³Ö¾îÁØ´Ù.
+        // ì¸ë±ìŠ¤ì™€ ê°’ì„ ë„£ì–´ì¤€ë‹¤.
         arr.push_back({ idx, val });
-        // ÀÎµ¦½º°¡ »ı±ä ºÎºĞÀº true·Î ¼³Á¤
+        // ì¸ë±ìŠ¤ê°€ ìƒê¸´ ë¶€ë¶„ì€ trueë¡œ ì„¤ì •
         visit[idx] = true;
     }
 
-    // ÀÎµ¦½º ±âÁØÀ¸·Î Á¤·Ä
+    // ì¸ë±ìŠ¤ ê¸°ì¤€ìœ¼ë¡œ ì •ë ¬
     sort(arr.begin(), arr.end());
 
 
-    // lis ¾Ë°í¸®ÁòÀ» Àû¿ëÇÑ´Ù.
-    // ÀÌ¶§ ½ÇÁ¦ ÀÎµ¦½º¸¦ ¾Ë¾Æ¾ß ÇÏ±â¿¡ lis ÃßÀû ¾Ë°í¸®Áò±îÁö Á¢¸ñÇÑ´Ù.
+    // lis ì•Œê³ ë¦¬ì¦˜ì„ ì ìš©í•œë‹¤.
+    // ì´ë•Œ ì‹¤ì œ ì¸ë±ìŠ¤ë¥¼ ì•Œì•„ì•¼ í•˜ê¸°ì— lis ì¶”ì  ì•Œê³ ë¦¬ì¦˜ê¹Œì§€ ì ‘ëª©í•œë‹¤.
     int pLis = 0, pArr = 1;
 
     lis[pLis] = arr[0].second;
@@ -83,7 +83,7 @@ int main()
     int len = vc.size();
     int t = pLis;
 
-    // lis ÃßÀû ÄÚµå
+    // lis ì¶”ì  ì½”ë“œ
     for (int i = n - 1; i >= 0; i--)
         if (trace[i].first == t)
         {
@@ -91,14 +91,14 @@ int main()
             t--;
         }
 
-    // ½ºÅÃ¿¡ ½×ÀÎ ÀÎµ¦½º¸¦ false·Î ¹Ù²ãÁØ´Ù. 
+    // ìŠ¤íƒì— ìŒ“ì¸ ì¸ë±ìŠ¤ë¥¼ falseë¡œ ë°”ê¿”ì¤€ë‹¤. 
     while (!s.empty())
     {
         visit[s.top()] = false;
         s.pop();
     }
 
-    // Á¤´äÀÌ µÇ´Â ÀÎµ¦½º¸¦ Ãâ·Â
+    // ì •ë‹µì´ ë˜ëŠ” ì¸ë±ìŠ¤ë¥¼ ì¶œë ¥
     for (int i = 0; i <= 500000; i++)
         if (visit[i])
             printf("%d\n", i);
