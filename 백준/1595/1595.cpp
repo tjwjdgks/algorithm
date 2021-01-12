@@ -15,12 +15,12 @@ void dfs(unsigned long long a, unsigned long long b) {
 }
 int main() {
 	string str;
-	unsigned long long index = 0;	
+	unsigned long long index = 0;
 	while (getline(cin, str)) {
 		if (str.empty()) break;
 		stringstream ss(str);
 		long long a, b, c;
-		ss >> a >> b >> c;	
+		ss >> a >> b >> c;
 		index = a;
 		graph[a].emplace_back(b, c);
 		graph[b].emplace_back(a, c);
