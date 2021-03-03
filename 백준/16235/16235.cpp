@@ -6,8 +6,8 @@ using namespace std;
 deque<int> arr[10][10];
 int insertGround[10][10];
 int ground[10][10];
-int N, M,K;
-int dy[] = {-1,-1,-1,0,0,1,1,1};
+int N, M, K;
+int dy[] = { -1,-1,-1,0,0,1,1,1 };
 int dx[] = { -1,0,1,-1,1,-1,0,1 };
 void SpringAndSummer() {
 	for (int i = 0; i < N; i++) {
@@ -60,7 +60,7 @@ int main() {
 	for (int i = 0; i < M; i++) {
 		int r, c, year;
 		cin >> r >> c >> year;
-		arr[r-1][c-1].push_back(year);
+		arr[r - 1][c - 1].push_back(year);
 	}
 	for (int i = 0; i < N; i++) {
 		for (int j = 0; j < N; j++) {
