@@ -1,47 +1,36 @@
 import java.util.*;
+
 class Pair{
-    Integer key;
-    Integer value;
-    public Pair(Integer key, Integer value){
-        this.key= key;
+    public int pos,value;
+    public Pair(int pos, int value){
+        this.pos = pos;
         this.value = value;
     }
 }
 class Solution {
     public int solution(int[] priorities, int location) {
-        int answer =0;
-        Queue<Pair> queue = new LinkedList<>();
-        for(int i=0; i<priorities.length;i++){
-            Pair temp = new Pair(i,priorities[i]);
-            queue.add(temp);
+        int answer = 0;
+        LinkedList<Pair> arr = new LinkedList<>();
+        for(int i=0; i<priorities.length; i++){
+            arr.add(new Pair(i,priorities[i]));
         }
         while(true){
-            Pair tempP = queue.poll();
+            Pair curp = arr.poll();
             boolean check = true;
-            for(Pair i : queue){
-                if(i.value > tempP.value){
+            for(Pair p : arr){
+                if(p.value > curp.value){
                     check = false;
                     break;
                 }
             }
-            if(check && tempP.key == location){
-                answer++;
-                break;
-            }
-            else if(check){
-                answer++;
+            if(check == false){
+                arr.add(curp);
             }
             else{
-                queue.add(tempP);
+                answer++;
+                if(curp.pos == location) break;
             }
         }
         return answer;
-    }
-}
-public class test{
-    public static void main(String[] args){
-        Solution a = new Solution();
-        int c = a.solution(new int[]{1,1,9,1,1,1},0);
-        System.out.println(c);
     }
 }
